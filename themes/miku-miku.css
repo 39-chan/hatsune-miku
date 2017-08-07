@@ -1,16 +1,17 @@
-/*  Copyright 2014 gokoururi
-    This work is free. You can redistribute it and/or modify it under the
-    terms of the Do What The Fuck You Want To Public License, Version 2,
-    as published by Sam Hocevar. See the COPYING file for more details. */
-
-html {
+html
+{
     height: 100%;
     margin: 0;
     padding: 0;
     font-size: 0;
 }
 	
-body {
+body
+{
+	background-image: url("../Miku.png"), url("../Miku_Logo.png");
+	background-size: 36%, 16%;
+	background-repeat: no-repeat, no-repeat;
+	background-position: left bottom, right bottom;
     background-color: #0EEADF;
     height: 100%;
     margin: 0;
@@ -21,11 +22,13 @@ body {
     border: 0;
 }
 
-.name-highlight {
+.name-highlight
+{
     color: #FF9966;
 }
 
-main {
+main
+{
     background-color: #33E7F7;
     border-color: #FFF;
     display: inline-block;
@@ -38,7 +41,8 @@ main {
     margin: 10vh 0 0 0;
 }
 
-h1 {
+h1
+{
     color: #AAA;
     text-shadow: 0 1px #FFF;
     letter-spacing: 2px;
@@ -49,7 +53,8 @@ h1 {
     margin: 0;
 }
 
-.subtitle {
+.subtitle
+{
     color: #AAA;
     text-align: center;
     letter-spacing: 2px;
@@ -57,7 +62,8 @@ h1 {
     margin: 0;
 }
 
-.searchBar {
+.searchBar
+{
     color: rgba(0,0,0,0);
     border-color: lightgrey;
     width: 20px;
@@ -73,7 +79,8 @@ h1 {
     opacity: 0.5;
     transition: all 1s;
 }
-.searchBar:hover {
+.searchBar:hover
+{
     box-shadow: 0 0 5px lightgrey;
     border-color: lightgrey;
 }
@@ -89,174 +96,212 @@ h1 {
 .searchBar:focus:-ms-input-placeholder      { color: rgba(100,100,100,1); } /* IE 10+ */
 /* Specyfing opacity for Fx is only resetting the defaults. Alpha from rgba will still work. */
 
-.searchBar:focus {
+.searchBar:focus
+{
     color: rgba(100,100,100,1);
 }
 
-.search_google {
+.search_google
+{
     background-image: url('images/icons/google.png');
 }
-.search_youtube {
+.search_youtube
+{
     background-image: url('images/icons/youtube.png');
 }
-.search_myanimelist {
+.search_myanimelist
+{
     background-image: url('images/icons/mal.png');
 }
-.search_nyaa {
+.search_nyaa
+{
     background-image: url('images/icons/nyaa.png');
 }
-.search_nyaa-pantsu {
+.search_nyaa-pantsu
+{
     background-image: url('images/icons/nyaa_pantsu.png');
 }
 
 /* Grey button */
 .button_grey > a,
-.button_grey > ul {
+.button_grey > ul
+{
     border-color: #FFF;
 }
 .button_grey > a,
-.button_grey > ul > li > a {
+.button_grey > ul > li > a
+{
     color: #FFF;
     background: #CCC;
 }
-.button_grey > a:after {
+.button_grey > a:after
+{
     border-left-color: #FFF;
 }
 .button_grey:hover > a,
-.button_grey > ul > li > a:hover {
+.button_grey > ul > li > a:hover
+{
     color: #FFDBB8;
     background: #FF9966;
 }
 .button_grey:hover > a,
-.button_grey:hover > ul {
+.button_grey:hover > ul
+{
     border-color: #FF9966;
 }
-.button_grey:hover > a:after {
+.button_grey:hover > a:after
+{
     border-left-color: #FFDBB8;
 }
 
 /* Green button */
 .button_green > a,
-.button_green > ul {
+.button_green > ul
+{
     border-color: #daffd5;
 }
 .button_green > a,
-.button_green > ul > li > a {
+.button_green > ul > li > a
+{
     color: #daffd5;
     background: #9be391;
 }
-.button_green > a:after {
+.button_green > a:after
+{
     border-left-color: #91b476;
 }
 .button_green:hover > a,
-.button_green > ul > li > a:hover {
+.button_green > ul > li > a:hover
+{
     color: #eeffeb;
     background: #91ff82;
 }
 .button_green:hover > a,
-.button_green:hover > ul {
+.button_green:hover > ul
+{
     border-color: #91ff82;
 }
-.button_green:hover > a:after {
+.button_green:hover > a:after
+{
     border-left-color: #269926;
 }
 
 /* column standard colors */
-.column {
+.column
+{
     border-right-color: #DDD;
 }
 .column > a,
 .column > ul > li:before {
     color: #DDD;
 }
-.column > a {
+.column > a
+{
     text-shadow: 0 0.5px #FFF;
 }
-.column > ul > li > a {
+.column > ul > li > a
+{
     color: #888;
 }
 
 /* purple column highlight */
 .column_purple:hover > a,
-.column_purple:hover > ul > li:before {
+.column_purple:hover > ul > li:before
+{
     color: #b9b6d9
 }
-.column_purple:hover > a {
+.column_purple:hover > a
+{
     text-shadow: 0 0.5px #FFF;
 }
-.column_purple > ul > li > a:hover {
+.column_purple > ul > li > a:hover
+{
     color: #b9b6d9;
 }
 
 /* pink column highlight */
 .column_pink:hover > a,
-.column_pink:hover > ul > li:before {
+.column_pink:hover > ul > li:before
+{
     color: #FF9966
 }
 .column_pink:hover > a {
     text-shadow: 0 0.5px #FFF;
 }
-.column_pink > ul > li > a:hover {
+.column_pink > ul > li > a:hover
+{
     color: #FF9966;
 }
 
 /* green column highlight */
 .column_green:hover > a,
-.column_green:hover > ul > li:before {
+.column_green:hover > ul > li:before
+{
     color: #729a64;
 }
 .column_green:hover > a {
     text-shadow: 0 0.5px #FFF;
 }
-.column_green > ul > li > a:hover {
+.column_green > ul > li > a:hover
+{
     color: #91b476;
 }
 
-.mascot {
+.mascot
+{
     padding: 20px 48px 20px 500px;
 }
 
-.plain {
+.plain
+{
     padding: 20px 20px 20px 20px;
 }
 
-header {
+header
+{
     margin-bottom: 30px;
 }
 
-.subtitle {
+.subtitle
+{
 
 }
 
-.searchContainer {
+.searchContainer
+{
     text-align: center;
     margin: 15px 0;
 }
 
-.searchForm {
+.searchForm
+{
     display: inline-block;
     margin: 0 10px;
 }
 
-.searchBar::-webkit-input-placeholder {
+.searchBar::-webkit-input-placeholder
+{
     transition: color 1s;
 }
 
-.searchBar:hover {
+.searchBar:hover
+{
     cursor: pointer;
     transition: all 0.5s;
     background-position: right center;
     opacity: 1;
 }
 
-.searchBar:focus {
+.searchBar:focus
+{
     cursor: text;
     width: 100px;
     padding: 0 25px 0 5px;
     opacity: 1;
 }
 
-nav {
+nav
+{
     text-align: center;
 }
 
@@ -269,12 +314,14 @@ nav {
 }
 
 /* Button configuration */
-.button {
+.button
+{
     position: relative;
     margin: 5px 10px;
     display: inline-block;
 }
-.button > a {
+.button > a
+{
     display: inline-block;
     min-width: 140px;
     text-decoration: none;
@@ -285,7 +332,8 @@ nav {
     outline: none;
     transition: all 1s;
 }
-.buttonArrow > a:after {
+.buttonArrow > a:after
+{
     width: 0;
     height: 0;
     font-size: 0;
@@ -301,11 +349,13 @@ nav {
     float: right;
     transition: all 1s;
 }
-.buttonArrow:hover > a:after {
+.buttonArrow:hover > a:after
+{
     transition: transform 0.5s, border 1s;
     transform: rotate(90deg);
 }
-.button > ul {
+.button > ul
+{
     position: absolute;
     box-sizing: border-box;
     overflow: hidden;
@@ -316,17 +366,20 @@ nav {
     transition: all 1s;
     z-index: 10;
 }
-.button:hover > ul {
+.button:hover > ul
+{
     max-height: 200px;
     border-width: 1px;
     border-style: solid;
     transition: max-height 0.5s, border 1s;
 }
 
-.button > ul > li {
+.button > ul > li
+{
     display: block;
 }
-.button > ul > li > a {
+.button > ul > li > a
+{
     display: inline-block;
     width: 100%;
     text-decoration: none;
@@ -334,15 +387,18 @@ nav {
     outline: 0;
     transition: all 1s;
 }
-.button > ul > li > a:hover {
+.button > ul > li > a:hover
+{
     color: #d67b96;
     background: #FF9966;
 }
 
-.columnList {
+.columnList
+{
     display: inline-block;
 }
-.column {
+.column
+{
     display: table-cell;
     text-align: center;
     height: 100%;
@@ -351,10 +407,12 @@ nav {
     padding: 0 10px;
 }
 
-.column:last-of-type {
+.column:last-of-type
+{
     border-right-width: 0;
 }
-.column > a {
+.column > a
+{
     display: inline-block;
     text-align: center;
     text-decoration: none;
@@ -364,11 +422,13 @@ nav {
     transition: all 0.8s;
 }
 
-.column > ul > li {
+.column > ul > li
+{
     margin-bottom: 3px;
 }
 
-.column > ul > li > a {
+.column > ul > li > a
+{
     text-decoration: none;
     vertical-align: middle;
     font-weight: bold;
