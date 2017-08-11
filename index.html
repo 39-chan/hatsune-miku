@@ -2,19 +2,19 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Welcome, Master~ ♥</title>
-        <link rel="icon" href="themes/favicon.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon" />
-        <link rel="stylesheet" style="text/css" href="themes/miku-dark.css" title="Hatsune Miku (Dark)" />
-		<link rel="alternate stylesheet" style="text/css" href="themes/miku-light.css" title="Hatsune Miku (Light)" />
-		<link rel="alternate stylesheet" style="text/css" href="themes/miku-miku.css" title="Hatsune Miku (Miku)" />
-        <script type="text/javascript">var mascotPath = "themes/images/mascots/";</script>
-        <script type="text/javascript" src="themes/mascots.js"></script>
-        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="js/mascots-control.js"></script>
-		<script type="text/javascript" src="js/modal-control.js"></script>
-		<script type="text/javascript" src="js/quotes-control.js"></script>
-		<script type="text/javascript" src="js/style-switcher.js"></script>
-		<!--<script type="text/javascript" src="js/snow-control.js"></script>--> <!--Turn this on to get a falling snow effect-->
+        <title>Homepage - Hatsune Miku</title>
+        <link rel="icon" href="com/images/favicon.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon" />
+        <link rel="stylesheet" style="text/css" href="com/css/miku-dark.css" title="Hatsune Miku (Dark)" />
+		<link rel="alternate stylesheet" style="text/css" href="com/css/miku-light.css" title="Hatsune Miku (Light)" />
+		<link rel="alternate stylesheet" style="text/css" href="com/css/miku-miku.css" title="Hatsune Miku (Miku)" />
+        <script type="text/javascript">var mascotPath = "com/images/mascots/";</script>
+        <script type="text/javascript" src="com/js/mascots.js"></script>
+        <script type="text/javascript" src="com/js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="com/js/mascots-control.js"></script>
+		<script type="text/javascript" src="com/js/modal-control.js"></script>
+		<script type="text/javascript" src="com/js/quotes-control.js"></script>
+		<script type="text/javascript" src="com/js/style-switcher.js"></script>
+		<!--<script type="text/javascript" src="com/js/snow-control.js"></script>--> <!--Turn this on to get a falling snow effect-->
 		<style>
 			.modal
 			{
@@ -56,7 +56,7 @@
     <body onkeydown="modalSettings()">
         <main>
             <header>
-                <h1 style="cursor: default;">Welcome, <span class="name-highlight">Master~ ♥</span></h1>
+                <h1 style="cursor: default;">Welcome back, <span class="name-highlight" style="cursor: pointer;" onclick="Miku_Master()">Master~ ♥</span></h1>
                 <p id="r_text" class="subtitle" style="cursor: default;"></p>
             </header>
             <section class="searchContainer">
@@ -167,5 +167,13 @@
 				</div>
 			</div>
         </main>
+		<audio src="com/audio/okaerinasai_master.wav" type="audio/wav" autoplay ></audio>
+		<audio src="com/audio/master.wav" type="audio/wav" id="master"></audio>
+		<script>
+			function Miku_Master()
+			{
+				document.getElementById('master').play();
+			}
+		</script>
     </body>
 </html>

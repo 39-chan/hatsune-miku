@@ -6,7 +6,7 @@ html {
 }
 	
 body {
-	background-image: url("../Miku.png"), url("../Miku_Logo.png");
+	background-image: url("../images/Miku.png"), url("../images/Miku_Logo.png");
 	background-size: 36%, 16%;
 	background-repeat: no-repeat, no-repeat;
 	background-position: left bottom, right bottom;
@@ -92,20 +92,25 @@ h1 {
     color: rgba(100,100,100,1);
 }
 
-.search_google {
-    background-image: url('images/icons/google.png');
+.search_google
+{
+    background-image: url('../images/icons/google.png');
 }
-.search_youtube {
-    background-image: url('images/icons/youtube.png');
+.search_youtube
+{
+    background-image: url('../images/icons/youtube.png');
 }
-.search_myanimelist {
-    background-image: url('images/icons/mal.png');
+.search_myanimelist
+{
+    background-image: url('../images/icons/mal.png');
 }
-.search_nyaa {
-    background-image: url('images/icons/nyaa.png');
+.search_nyaa
+{
+    background-image: url('../images/icons/nyaa.png');
 }
-.search_nyaa-pantsu {
-    background-image: url('images/icons/nyaa_pantsu.png');
+.search_nyaa-pantsu
+{
+    background-image: url('../images/icons/nyaa_pantsu.png');
 }
 
 /* Grey button */
