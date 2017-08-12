@@ -15,48 +15,12 @@
 		<script type="text/javascript" src="com/js/quotes-control.js"></script>
 		<script type="text/javascript" src="com/js/style-switcher.js"></script>
 		<!--<script type="text/javascript" src="com/js/snow-control.js"></script>--> <!--Turn this on to get a falling snow effect-->
-		<style>
-			.modal
-			{
-				display: none; /* Hidden by default */
-				position: fixed; /* Stay in place */
-				z-index: 1; /* Sit on top */
-				left: 0;
-				top: 0;
-				width: 100%; /* Full width */
-				height: 100%; /* Full height */
-				overflow: none; /* Set to auto to enable scroll if needed */
-				background-color: rgb(0,0,0); /* Fallback color */
-				background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
-			}
-			.modal-content
-			{
-				background-color: #fefefe;
-				margin: 5% auto; /* 15% from the top and centered */
-				padding: 20px;
-				border: 1px solid #888;
-				width: 50%; /* Could be more or less, depending on screen size */
-			}
-			.close
-			{
-				color: #aaa;
-				float: right;
-				font-size: 28px;
-				font-weight: bold;
-				transition: all 200ms
-			}
-			.close:hover, .close:focus
-			{
-				color: black;
-				text-decoration: none;
-				cursor: pointer;
-			}
-		</style>
 	</head>
     <body onkeydown="modalSettings()">
         <main>
             <header>
-                <h1 style="cursor: default;">Welcome back, <span class="name-highlight" style="cursor: pointer;" onclick="Miku_Master()">Master~ ♥</span></h1>
+				<script type="text/javascript" src="com/js/aisatsu-control.js"></script>
+                <!--<h1 style="cursor: default;">Welcome back, <span class="name-highlight" style="cursor: pointer;" onclick="Miku_Master()">Master~ ♥</span></h1>-->
                 <p id="r_text" class="subtitle" style="cursor: default;"></p>
             </header>
             <section class="searchContainer">
@@ -167,7 +131,7 @@
 				</div>
 			</div>
         </main>
-		<audio src="com/audio/okaerinasai_master.wav" type="audio/wav" autoplay ></audio>
+		<audio src="com/audio/okaerinasai_master.wav" type="audio/wav" autoplay></audio>
 		<audio src="com/audio/master.wav" type="audio/wav" id="master"></audio>
 		<script>
 			function Miku_Master()
